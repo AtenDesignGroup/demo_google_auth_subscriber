@@ -1,0 +1,7 @@
+name: Demo Google Auth Event Subscriber
+description: Handles automatic activation of domain based accounts and controls role assignment based on Google Groups.
+core_version_requirement: ^8.8 || ^9
+type: module
+package: 'Demo'
+dependencies:
+  - social_auth:social_auth

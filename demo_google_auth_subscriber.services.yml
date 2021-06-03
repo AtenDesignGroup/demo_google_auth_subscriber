@@ -1,0 +1,10 @@
+services:
+  demo_google_auth_subscriber:
+    class: Drupal\demo_google_auth_subscriber\EventSubscriber\DemoAuthSubscriber
+    arguments:
+      - "@messenger"
+      - "@social_auth.data_handler"
+      - "@plugin.network.manager"
+      - "@social_auth_google.manager"
+    tags:
+      - { name: "event_subscriber" }
